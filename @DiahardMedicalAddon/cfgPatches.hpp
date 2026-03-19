@@ -1,12 +1,14 @@
 class CfgPatches
 {
-    class DMAMedical
+    class DiahardMedicalAddons
     {
-        name = "DMA Medical";
+        name = "Diahard Medical Addons";
         author = "Diahard";
         requiredVersion = 1.0;
         requiredAddons[] =
         {
+            "cba_main",
+            "cba_settings",
             "ace_medical_treatment",
             "ace_medical_engine"
         };
@@ -14,7 +16,9 @@ class CfgPatches
         weapons[] =
         {
             "DMA_EmergencyTraumaDressing",
-            "DMA_Chitosan"
+            "DMA_Chitosan",
+            "DMA_Oxycodone",
+            "DMA_Methadone"
         };
     };
 };
