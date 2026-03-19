@@ -241,5 +241,17 @@ class ACE_Medical_Treatment
             incompatibleMedication[] = {};
             viscosityChange = -10; };
 
+	class methadone{
+			painReduce = 0;
+            hrIncreaseLow[] = {10, 20};
+            hrIncreaseNormal[] = {10, 20};
+            hrIncreaseHigh[] = {10, -25};
+            timeInSystem = 1200;
+            timeTillMaxEffect = 5;
+            maxDose = 4;
+            dose = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = 10; };
+
 	};//Final Break for medications
 };
