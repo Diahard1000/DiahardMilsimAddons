@@ -211,5 +211,35 @@ class ACE_Medical_Treatment
             class PunctureWoundMedium: PunctureWound{};
             class PunctureWoundLarge: PunctureWound{};
         };
-    };
+    };//Final Break for Bandages
+
+
+	class medication{
+		/*
+        painReduce = 0; // How much does the pain get reduced?
+        // How much will the heart rate be increased when the HR is low (below 55)? {minIncrease, maxIncrease}
+        hrIncreaseLow[] = {0, 0}; // _heartRate < 55
+        hrIncreaseNormal[] = {0, 0}; //55 <= _heartRate <= 110
+        hrIncreaseHigh[] = {0, 0};   //110 < _heartRate
+		timeInSystem = 120;//How long until this medication has disappeared
+        timeTillMaxEffect = 30;//How long until the maximum effect is reached
+        maxDose = 4; //How many doses of this medication can be in the system before the patient can possibly overdose?      // The number of doses over maxDose where there is a chance to overdose.
+        maxDoseDeviation = 2; // Example with maxDose = 4 and maxDoseDeviation = 2: Dose 4: Safe | Dose 5 and 6: Possible overdose | Dose 7: Guaranteed overdose
+        dose = 1; //The dose of the medication, to allow for different dose amounts of the same medication
+        onOverDose = ""; //Function to execute upon overdose. Arguments passed to call back are 0: Patient <OBJECT>, 1: Medication classname <STRING>, 2: Medication dosage <NUMBER>, 3: Overdose threshold <NUMBER>, 4: Incompatible medication that caused overdose (can be the medication itself) <STRING> (default: "")
+        viscosityChange = 0; //The viscosity of a fluid is a measure of its resistance to gradual deformation by shear stress or tensile stress. For liquids, it corresponds to the informal concept of "thickness". This value will increase/decrease the viscoty of the blood with the percentage given. Where 100 = max. Using the minus will decrease viscosity
+		*/
+	class Oxycodone{
+			painReduce = 0.5;
+            hrIncreaseLow[] = {-10, -20};
+            hrIncreaseNormal[] = {-10, -30};
+            hrIncreaseHigh[] = {-10, -35};
+            timeInSystem = 1200;
+            timeTillMaxEffect = 30;
+            maxDose = 4;
+            dose = 1;
+            incompatibleMedication[] = {};
+            viscosityChange = -10; };
+
+	};//Final Break for medications
 };
